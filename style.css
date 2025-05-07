@@ -1,0 +1,362 @@
+@font-face {
+    font-family: "Orbitron";
+    src: url('Orbitron-ExtraBold.ttf') format("truetype")
+}
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Orbitron","Poor Richard","Arial";
+    background-color: #121212;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    font-weight: bolder;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+    border-bottom: 4px double cyan;
+    padding: 0 20px;
+}
+
+.logo {
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 36px;
+    color: #000000;
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+
+.right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: #00ffaa;
+    font-weight: 900;
+}
+
+li a:hover {
+    color: cyan;
+    transition: all 0.5s;
+    text-decoration: underline;
+}
+
+/* Section One */
+.section-one {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 20px;
+}
+
+#mylogo {
+    border-radius: 50%;
+    height: 390px;
+    width: 390px;
+    object-fit: none;
+    box-shadow: 0 0 10px 3px rgba(0, 225, 255, 0.789);
+    margin: 20px;
+}
+
+.oneleft {
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+    background: linear-gradient(to right, cyan, rgb(81, 80, 80));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 5s linear infinite;
+}
+
+@keyframes animate-gradient {
+    to {
+        background-position: 200%;
+    }
+}
+
+.oneleft .btn {
+    padding: 12px 20px;
+    color: #00ffe1;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #262626;
+    margin: 10px;
+    font-family: "Orbitron";
+}
+.btn:hover{
+    box-shadow: 0 0 6px white;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.con {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    cursor: pointer; 
+ 
+}
+
+
+.con:hover {
+box-shadow: 0 0 8px cyan;
+}
+#element{
+    color: #00ffea;
+}
+hr{
+    border: 2px solid cyan;
+    margin:  70px 15px;
+}
+/* Section Two */
+.section-two {
+    max-width: 90%;
+    margin: auto;
+    color: azure;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-two h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.text-gray {
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+}
+.vertical:hover{
+    background-color: #262626;
+    transition: all 0.3s;
+}
+.image-top {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.vertical-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #1e1e1e;
+}
+
+.vertical-desc {
+    font-size: 0.8rem;
+    color: gray;
+}
+.vt{
+position: relative;
+top: 23px;
+}
+.vp{
+    position: relative;
+    top: 23px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #171717;
+    color: #ffffff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+.h2{
+font-size: 22px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+ h3{
+    font-size:18px;
+
+}
+.footer div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.7rem;
+    color: rgb(134, 134, 134);
+}
+
+.footer ul li {
+    padding: 2px 0;
+}
+
+.footer ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-rights {
+    font-size: 0.7rem;
+    color: rgb(94, 94, 94);
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .right ul {
+    display: none;
+       
+    }
+
+    .section-one {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #mylogo {
+        height: 250px;
+        width: 250px;
+    }
+
+    .oneleft {
+        font-size: 1.5rem;
+    }
+
+    .contact {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical {
+        width: 90%;
+    }
+    .vt{
+        position: relative;
+        top: 15px;
+        }
+        .vp{
+            position: relative;
+            top: 15px;
+        }
+        
+}
+
+@media (max-width: 480px) {
+    .oneleft {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer div {
+        text-align: center;
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.section {
+    display: none;
+    padding: 40px;
+    animation: fadeSlide 0.5s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .active {
+    display: block;
+  }
+
+  @keyframes fadeSlide {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
