@@ -17,3 +17,9 @@ function showSection(sectionId) {
       activeSection.classList.add('active');
     }, 10); // Slight delay for animation to trigger
   }
+  
+
+
+
+
+

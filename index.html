@@ -17,9 +17,9 @@
             <ul>
                 <li> <a href="#" onclick="showSection('home')">Home</a></li>
                 <li> <a href="#" onclick="showSection('about')">About</a></li>
-                <li> <a href="#">Skills</a></li>
-                <li> <a href="#">Projects</a></li>
-                <li> <a href="#">Contact</a></li>
+                <li> <a href="#" onclick="showSection('skills')">Skills</a></li>
+                <li> <a href="#" onclick="showSection('projects')">Projects</a></li>
+                <li> <a href="#" onclick="showSection('contact')">Contact</a></li>
             </ul>
 
         </div>
@@ -31,115 +31,506 @@
                 <div> and I am a passionate</div>
                 <span id="element"></span>
                 <div class="contact">
-                    <a href="#"> <img src="img/Instagram.png" class="con">
-                        <a href="https://twitter.com/@ANeoPhoenix" target="_blank"> <img src="img/X.png" class="con"></a>
-                        <a href="#"> <img src="img/Facebook.png" class="con"></a>
-                        <a href="https://wa.me/7384772383" target="_blank"><img src="img/Whatsapp.png" class="con"></a>
-                        <a href="https://www.linkedin.com/in/anubhav-chowdhury-b7905b339" target="_blank"> <img src="img/Linkdin.png" class="con"></a>
-                </div>
-                <div class="buttons">
-                  <a href="Anubha CV.pdf" download target="_blank"> <button class="btn">Download Resume</button></a>
-                   <a href="https://github.com/Anubhav-webdev/Anubhav-webdev" target="_blank"><button class="btn"> Visit GitHub</button></a> 
+                    <button onclick="window.open('#')" title="Instagram" class="urls">
+                        <img src="img/Instagram.png" class="con" alt="Instagram">
+                    </button>
+
+                    <button onclick="window.open('https://twitter.com/@ANeoPhoenix', '_blank')" title="Twitter"
+                        class="urls">
+                        <img src="img/X.png" class="con" alt="Twitter">
+                    </button>
+
+                    <button onclick="window.open('#')" title="Facebook" class="urls">
+                        <img src="img/Facebook.png" class="con" alt="Facebook">
+                    </button>
+                    <button onclick="window.open('https://wa.me/7384772383', '_blank')" class="urls"
+                        title="Chat on WhatsApp">
+                        <img src="img/Whatsapp.png" class="con" alt="WhatsApp">
+                    </button>
+
+                    <button onclick="window.open('https://www.linkedin.com/in/anubhav-chowdhury-b7905b339', '_blank')"
+                        title="LinkedIn" class="urls">
+                        <img src="img/Linkdin.png" class="con" alt="LinkedIn">
+                    </button>
+
+                    <!-- Resume Download Button -->
+                    <div class="rg">
+                        <button onclick="window.open('Anubha CV.pdf')" class="btn" title="Download Resume">
+                            Download Resume
+                        </button>
+
+                        <!-- GitHub Button -->
+                        <button onclick="window.open('https://github.com/Anubhav-webdev/Anubhav-webdev', '_blank')"
+                            class="btn" title="Visit GitHub">
+                            Visit GitHub
+                        </button>
+                    </div>
+
                 </div>
             </div>
 
         </div>
         <hr>
-
         <div class="section-two">
+            <span class="text-gray"> &#10031 Get to Know Me &#10031</span>
+            <h1>About A</h1>
+            <div class="about">
+
+                <p>
+                    Hey there! I'm Anubhav Chowdhury, a passionate Computer Science diploma student on a journey to
+                    become a creative and skilled Web Developer.
+
+                    My web journey began with basic layouts and simple pages, and over time, I've evolved into building
+                    more advanced, dynamic, and responsive websites.
+
+                    I’m currently mastering React with Vite, styling clean interfaces using Tailwind CSS, and managing
+                    code efficiently through GitHub.
+
+                    I love turning ideas into real digital experiences — websites that don’t just look great, but also
+                    feel fast, smooth, and interactive. </p>
+                <h2>What I Can Do :</h2>
+
+                <ul>
+                    <li>
+                        <strong1>✨ HTML & CSS</strong1> – My bread and butter
+                    </li>
+                    <li>
+                        <strong1>⚙️ JavaScript</strong1> – Bringing life to the UI
+                    </li>
+                    <li>
+                        <strong1>🧠 Basic Python</strong1> – Problem-solving & logic building
+                    </li>
+                    <li>
+                        <strong1>💾 SQL</strong1> – Managing and interacting with data
+                    </li>
+                    <li>
+                        <strong1>🎨 Tailwind CSS</strong1> – For sleek, responsive designs
+                    </li>
+                    <li>
+                        <strong1>🔥 React (with Vite)</strong1> – Learning to build dynamic interfaces
+                    </li>
+                    <li>
+                        <strong1>🛠️ GitHub</strong1> – Tracking my progress and pushing boundaries
+                    </li>
+                </ul>
+
+                <span class="text-gray"> &#10031Build with logic. Design with heart. Code with purpose.</span>
+
+                <h2> 🎯 Fun Fact:</h2>
+                <p> I don’t just code — I solve problems, manage time effectively, and design with intention. Whether
+                    it’s building layouts, improving performance, or debugging the unexpected, I focus on creating
+                    smooth, responsive experiences that are as functional as they are visually engaging.
+                </p>
+
+
+            </div>
+        </div>
+        <hr>
+        <div class="section-three">
             <span class="text-gray"> &#10031 What I have done so far &#10031</span>
             <h1> Work Experience</h1>
             <div class="box">
                 <div class="vertical">
-                    <img class="image-top" src="img/Html.png">
-                    <div class="vertical-title">HTML Developer (2023 - 2025)</div>
-                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-                        consequuntur quod nihil consequatur repellendus commodi soluta consectetur illum quidem
-                        expedita, itaque culpa ea quibusdam!</div>
+                    <div class="img-flex"><img class="image-top" src="img/Html.png"><img class="image-top" src="img/css.png"></div>
+                    <div class="vertical-title">HTML & CSS Developer (2023 - 2024)</div>
+                    <div class="vertical-desc"><ol><li>✅ Proficient in HTML5 & CSS3</li>
+<li>✅ Responsive design with Flexbox & Grid</li>
+<li>✅ Clean, semantic, accessible code</li>
+<li>✅ Passion for creating user-friendly interfaces</li>
+<li>✅ Continuous learner in web development</li></ol></div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="img/java-script.png">
+                    <div class="vertical-title">JS Developer (2024 - 2025)</div>
+                     <div class="vertical-desc"><ol><li>✅ DOM Manipulation & Events</li>
+<li>✅ API Integration & Fetch</li>
+<li>✅ Async/Await & Promises</li>
+<li>✅ Animations & Interactivity</li>
+<li>✅ Building dynamic web apps</li></ol></div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="img\download.png">
+                    <div class="vertical-title">Tailwind CSS Developer (2025 - 0000)</div>
+                        <div class="vertical-desc"><ol><li>✅ Utility-first CSS</li>
+<li>✅ Fast and responsive layouts</li>
+<li>✅ Custom components & themes</li>
+<li>✅ Dark mode support</li>
+<li>✅ Smooth animations</li></ol></div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="img/React.png">
-                    <div class="vertical-title">REACT Developer (0000-0000)</div>
-                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-                        consequuntur quod nihil consequatur repellendus commodi soluta consectetur illum quidem
-                        expedita, itaque culpa ea quibusdam!</div>
+                    <div class="vertical-title">REACT Developer (2025 - 0000)</div>
+                    <div class="vertical-desc"><ol>
+                        <li>✅ Functional Components & Hooks</li>
+<li>✅ Props & State Management</li>
+<li>✅ React Router</li>
+<li>✅ API Integration</li>
+<li>✅ SPA Development</li>
+                    </ol></div>
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="img/Nodejs.png">
-                    <div class="vertical-title vt">Node js Developer (0000-0000)</div>
-                    <div class="vertical-desc vp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-                        consequuntur quod nihil consequatur repellendus commodi soluta consectetur illum quidem
-                        expedita, itaque culpa ea quibusdam!</div>
+                    <img class="image-top" src="img\download (1).png">
+                    <div class="vertical-title">Git & GitHub Developer (2025-0000)</div>
+                       <div class="vertical-desc"><ol>
+                        <li>✅ Version Control System</li>
+<li>✅ Branching & Merging</li>
+<li>✅ Pull Requests & Code Review</li>
+<li>✅ Collaboration on Projects</li>
+<li>✅ Open-Source Contributions</li>
+                    </ol></div>
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="img/Mysql.png">
-                    <div class="vertical-title vt">MySQL Developer (0000-0000)</div>
-                    <div class="vertical-desc vp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-                        consequuntur quod nihil consequatur repellendus commodi soluta consectetur illum quidem
-                        expedita, itaque culpa ea quibusdam!</div>
+                     <div class="img-flex"><img class="image-top" src="img/Nodejs.png"><img class="image-top" src="img\download.jpeg"></div>
+                    <div class="vertical-title vt">Node.js & Express.js Developer (0000-0000)</div>
+                     <div class="vertical-desc"><ol>
+                     <li> ✅ RESTful API Development</li>
+<li>✅ Middleware & Routing</li>
+<li>✅ Backend Logic & Services</li>
+<li>✅ Database Integration (MongoDB, MySQL, etc.)</li>
+<li>✅ Full-Stack Web App Development</li>
+                    </ol></div>
+                </div>
+                <div class="vertical">
+                  <img class="image-top" src="img/Mysql.png"> 
+                    <div class="vertical-title vt">MySQL Developer (2023-2024)</div>
+           <div class="vertical-desc"><ol>
+                   <li>✅ Relational Database</li>
+<li>✅ SQL Queries</li>
+<li>✅ Schema Design & Normalization</li>
+<li>✅ Joins & Relationships</li>
+<li>✅ Secure Transactions</li>
+                    </ol></div>
+                </div>
+                <div class="vertical">
+                  <img class="image-top" src="img\download (1).jpeg"> 
+                    <div class="vertical-title vt">MongoDB Developer (2023-2024)</div>
+                     <div class="vertical-desc"><ol>
+    <li>✅ NoSQL Database</li>
+<li>✅ Schema-less Design</li>
+<li>✅ CRUD Operations</li>
+<li>✅ Aggregation Pipeline</li>
+<li>✅ Node.js Integration</li>
+                    </ol></div>
                 </div>
 
                 <div class="vertical">
                     <img class="image-top" src="img/Developer .png">
                     <div class="vertical-title">Full Stack Developer (2027 - 2029)</div>
-                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-                        consequuntur quod nihil consequatur repellendus commodi soluta consectetur illum quidem
-                        expedita, itaque culpa ea quibusdam!</div>
+                        <div class="vertical-desc"><ol>
+                <li>✅ Frontend: HTML, CSS, JavaScript, React, Tailwind</li>
+<li>✅ Backend: Node.js, Express.js, MySQL, MongoDB</li>
+<li>✅ Version Control: Git & GitHub</li>
+<li>✅ Develop responsive, dynamic, and user-friendly web applications.</li>
+<li>✅ Integrate RESTful APIs and manage secure data flow.</li>
+<li>✅ Optimize performance, scalability, and deployment of full-stack projects.</li>
+                    </ol></div>
                 </div>
 
 
             </div>
         </div>
+        <hr>
+        <div class="section-four">
+            <span class="text-gray"> &#10031 Give short descriptions of my main projects. &#10031</span>
+            <h1>📂 Projects</h1>
+            <ul>
+                <li>
+                    🟢 <strong>Spotify Clone (UI Only):</strong>
+                    A front-end clone of the Spotify homepage using HTML, CSS and JavaScript. It focuses on layout,
+                    styling, and responsiveness, with no backend functionality.
+                </li>
+
+                <li><br>
+                    🪐 <strong>Solar System Website:</strong>
+                    An educational web layout showing planets and their types using pure HTML, CSS and JavaScript.
+                    Includes categorized sections, smooth design, and a clean UI.
+                </li>
+
+                <li><br>
+                    📋 <strong>To-Do List App:</strong>
+                    A basic task manager built with JavaScript where users can add, complete, or delete tasks. Great for
+                    practicing DOM manipulation.
+                </li>
+
+                <li><br>
+                    🧮 <strong>Scientific Calculator (Basic):</strong>
+                    A simple calculator using HTML, CSS, and JavaScript that supports basic arithmetic and some
+                    scientific operations.
+                </li>
+
+                <li><br>
+                    🧾 <strong>Responsive Checkout Page:</strong>
+                    A fully responsive checkout form design with multiple input fields, validation highlights, and
+                    modern UI styling.
+                </li>
+
+                <li><br>
+                    ✅ <strong>Form Validation:</strong>
+                    A clean HTML/CSS/JS form that validates user input in real time for fields like email, password,
+                    phone number, etc.
+                </li><br>
+
+                <li>
+                    💱 <strong>Currency Converter (API Project):</strong>
+                    A currency exchange rate converter built with HTML, CSS, and JavaScript using a public API to fetch
+                    real-time exchange rates.
+                </li>
+            </ul>
+
+        </div>
     </main>
 
 
-
-
     <div id="about" class="section-two section">
-        <span class="text-gray"> &#10031 What I have done so far &#10031</span>
-        <h1> Work Experience</h1>
-        <div class="box">
-            <div class="vertical">
-                <img class="image-top" src="img/Html.png">
-                <div class="vertical-title">HTML Developer (2023 - 2025)</div>
-                <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-                    consequuntur quod nihil consequatur repellendus commodi soluta consectetur illum quidem
-                    expedita, itaque culpa ea quibusdam!</div>
-            </div>
-            <div class="vertical">
-                <img class="image-top" src="img/React.png">
-                <div class="vertical-title">REACT Developer (0000-0000)</div>
-                <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-                    consequuntur quod nihil consequatur repellendus commodi soluta consectetur illum quidem
-                    expedita, itaque culpa ea quibusdam!</div>
-            </div>
-            <div class="vertical">
-                <img class="image-top" src="img/Nodejs.png">
-                <div class="vertical-title vt">Node js Developer (0000-0000)</div>
-                <div class="vertical-desc vp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-                    consequuntur quod nihil consequatur repellendus commodi soluta consectetur illum quidem
-                    expedita, itaque culpa ea quibusdam!</div>
-            </div>
-            <div class="vertical">
-                <img class="image-top" src="img/Mysql.png">
-                <div class="vertical-title vt">MySQL Developer (0000-0000)</div>
-                <div class="vertical-desc vp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-                    consequuntur quod nihil consequatur repellendus commodi soluta consectetur illum quidem
-                    expedita, itaque culpa ea quibusdam!</div>
-            </div>
+        <span class="text-gray"> &#10031 Get to Know Me &#10031</span>
+        <h1>About A</h1>
+        <div class="about">
 
-            <div class="vertical">
-                <img class="image-top" src="img/Developer .png">
-                <div class="vertical-title">Full Stack Developer (2027 - 2029)</div>
-                <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-                    consequuntur quod nihil consequatur repellendus commodi soluta consectetur illum quidem
-                    expedita, itaque culpa ea quibusdam!</div>
-            </div>
+            <p>
+                Hey there! I'm Anubhav Chowdhury, a passionate Computer Science diploma student on a journey to become a
+                creative and skilled Web Developer.
+
+                My web journey began with basic layouts and simple pages, and over time, I've evolved into building more
+                advanced, dynamic, and responsive websites.
+
+                I’m currently mastering React with Vite, styling clean interfaces using Tailwind CSS, and managing code
+                efficiently through GitHub.
+
+                I love turning ideas into real digital experiences — websites that don’t just look great, but also feel
+                fast, smooth, and interactive. </p>
+            <h2>What I Can Do :</h2>
+
+            <ul>
+                <li>
+                    <strong1>✨ HTML & CSS</strong1> – My bread and butter
+                </li>
+                <li>
+                    <strong1>⚙️ JavaScript</strong1> – Bringing life to the UI
+                </li>
+                <li>
+                    <strong1>🧠 Basic Python</strong1> – Problem-solving & logic building
+                </li>
+                <li>
+                    <strong1>💾 SQL</strong1> – Managing and interacting with data
+                </li>
+                <li>
+                    <strong1>🎨 Tailwind CSS</strong1> – For sleek, responsive designs
+                </li>
+                <li>
+                    <strong1>🔥 React (with Vite)</strong1> – Learning to build dynamic interfaces
+                </li>
+                <li>
+                    <strong1>🛠️ GitHub</strong1> – Tracking my progress and pushing boundaries
+                </li>
+            </ul>
+
+
+
+            <span class="text-gray"> &#10031Build with logic. Design with heart. Code with purpose.</span>
+
+            <h2> 🎯 Fun Fact:</h2>
+            <p> I don’t just code — I solve problems, manage time effectively, and design with intention. Whether it’s
+                building layouts, improving performance, or debugging the unexpected, I focus on creating smooth,
+                responsive experiences that are as functional as they are visually engaging.
+            </p>
 
 
         </div>
     </div>
+         <div id="skills" class="section-three section">
+            <span class="text-gray"> &#10031 What I have done so far &#10031</span>
+            <h1> Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="img-flex"><img class="image-top" src="img/Html.png"><img class="image-top" src="img/css.png"></div>
+                    <div class="vertical-title">HTML & CSS Developer (2023 - 2024)</div>
+                    <div class="vertical-desc"><ol><li>✅ Proficient in HTML5 & CSS3</li>
+<li>✅ Responsive design with Flexbox & Grid</li>
+<li>✅ Clean, semantic, accessible code</li>
+<li>✅ Passion for creating user-friendly interfaces</li>
+<li>✅ Continuous learner in web development</li></ol></div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="img/java-script.png">
+                    <div class="vertical-title">JS Developer (2024 - 2025)</div>
+                     <div class="vertical-desc"><ol><li>✅ DOM Manipulation & Events</li>
+<li>✅ API Integration & Fetch</li>
+<li>✅ Async/Await & Promises</li>
+<li>✅ Animations & Interactivity</li>
+<li>✅ Building dynamic web apps</li></ol></div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="img\download.png">
+                    <div class="vertical-title">Tailwind CSS Developer (2025 - 0000)</div>
+                        <div class="vertical-desc"><ol><li>✅ Utility-first CSS</li>
+<li>✅ Fast and responsive layouts</li>
+<li>✅ Custom components & themes</li>
+<li>✅ Dark mode support</li>
+<li>✅ Smooth animations</li></ol></div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="img/React.png">
+                    <div class="vertical-title">REACT Developer (2025 - 0000)</div>
+                    <div class="vertical-desc"><ol>
+                        <li>✅ Functional Components & Hooks</li>
+<li>✅ Props & State Management</li>
+<li>✅ React Router</li>
+<li>✅ API Integration</li>
+<li>✅ SPA Development</li>
+                    </ol></div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="img\download (1).png">
+                    <div class="vertical-title">Git & GitHub Developer (2025-0000)</div>
+                       <div class="vertical-desc"><ol>
+                        <li>✅ Version Control System</li>
+<li>✅ Branching & Merging</li>
+<li>✅ Pull Requests & Code Review</li>
+<li>✅ Collaboration on Projects</li>
+<li>✅ Open-Source Contributions</li>
+                    </ol></div>
+                </div>
+                <div class="vertical">
+                     <div class="img-flex"><img class="image-top" src="img/Nodejs.png"><img class="image-top" src="img\download.jpeg"></div>
+                    <div class="vertical-title vt">Node.js & Express.js Developer (0000-0000)</div>
+                     <div class="vertical-desc"><ol>
+                     <li> ✅ RESTful API Development</li>
+<li>✅ Middleware & Routing</li>
+<li>✅ Backend Logic & Services</li>
+<li>✅ Database Integration (MongoDB, MySQL, etc.)</li>
+<li>✅ Full-Stack Web App Development</li>
+                    </ol></div>
+                </div>
+                <div class="vertical">
+                  <img class="image-top" src="img/Mysql.png"> 
+                    <div class="vertical-title vt">MySQL Developer (2023-2024)</div>
+           <div class="vertical-desc"><ol>
+                   <li>✅ Relational Database</li>
+<li>✅ SQL Queries</li>
+<li>✅ Schema Design & Normalization</li>
+<li>✅ Joins & Relationships</li>
+<li>✅ Secure Transactions</li>
+                    </ol></div>
+                </div>
+                <div class="vertical">
+                  <img class="image-top" src="img\download (1).jpeg"> 
+                    <div class="vertical-title vt">MongoDB Developer (2023-2024)</div>
+                     <div class="vertical-desc"><ol>
+    <li>✅ NoSQL Database</li>
+<li>✅ Schema-less Design</li>
+<li>✅ CRUD Operations</li>
+<li>✅ Aggregation Pipeline</li>
+<li>✅ Node.js Integration</li>
+                    </ol></div>
+                </div>
 
+                <div class="vertical">
+                    <img class="image-top" src="img/Developer .png">
+                    <div class="vertical-title">Full Stack Developer (2027 - 2029)</div>
+                        <div class="vertical-desc"><ol>
+                <li>✅ Frontend: HTML, CSS, JavaScript, React, Tailwind</li>
+<li>✅ Backend: Node.js, Express.js, MySQL, MongoDB</li>
+<li>✅ Version Control: Git & GitHub</li>
+<li>✅ Develop responsive, dynamic, and user-friendly web applications.</li>
+<li>✅ Integrate RESTful APIs and manage secure data flow.</li>
+<li>✅ Optimize performance, scalability, and deployment of full-stack projects.</li>
+                    </ol></div>
+                </div>
+
+
+            </div>
+        </div>
+    <div id="projects" class="section-four section">
+        <span class="text-gray"> &#10031 Give short descriptions of my main projects. &#10031</span>
+        <h1>📂 Projects</h1>
+        <ul>
+            <li>
+                🟢 <strong>Spotify Clone (UI Only):</strong>
+                A front-end clone of the Spotify homepage using HTML, CSS and JavaScript. It focuses on layout,
+                styling, and responsiveness, with no backend functionality.
+            </li>
+
+            <li><br>
+                🪐 <strong>Solar System Website:</strong>
+                An educational web layout showing planets and their types using pure HTML, CSS and JavaScript.
+                Includes categorized sections, smooth design, and a clean UI.
+            </li>
+
+            <li><br>
+                📋 <strong>To-Do List App:</strong>
+                A basic task manager built with JavaScript where users can add, complete, or delete tasks. Great for
+                practicing DOM manipulation.
+            </li>
+
+            <li><br>
+                🧮 <strong>Scientific Calculator (Basic):</strong>
+                A simple calculator using HTML, CSS, and JavaScript that supports basic arithmetic and some
+                scientific operations.
+            </li>
+
+            <li><br>
+                🧾 <strong>Responsive Checkout Page:</strong>
+                A fully responsive checkout form design with multiple input fields, validation highlights, and
+                modern UI styling.
+            </li>
+
+            <li><br>
+                ✅ <strong>Form Validation:</strong>
+                A clean HTML/CSS/JS form that validates user input in real time for fields like email, password,
+                phone number, etc.
+            </li><br>
+
+            <li>
+                💱 <strong>Currency Converter (API Project):</strong>
+                A currency exchange rate converter built with HTML, CSS, and JavaScript using a public API to fetch
+                real-time exchange rates.
+            </li>
+        </ul>
+    </div>
+    <div id="contact" class=" section-five section">
+        <span class="text-gray">&#10031 Feel free to reach out if you'd like to collaborate or just say hello! &#10031
+        </span>
+        <h1>Contact Me</h1>
+
+        <ul>
+
+            <li>
+                <i><img src="img/circle.png" class="con"></i>
+                <strong>Location:</strong>
+                <label>Kantagaria, Paschim Medinipur, West Bengal, India</label>
+            </li><br>
+
+
+            <li>
+                <i><img src="img/Whatsapp.png" class="con" alt="WhatsApp"></i>
+                <strong>WhatsApp:</strong>
+                <button onclick="window.open('https://wa.me/7384772383', '_blank')" class="urls" title="WhatsApp">
+                    <label>ANeoPhoenix</label>
+                </button>
+            </li><br>
+
+            <li>
+                <i><img src="img/github.png" class="con" alt="GitHub"></i>
+                <strong>GitHub:</strong>
+                <button onclick="window.open('https://github.com/Anubhav-webdev/Anubhav-webdev', '_blank')" class="urls"
+                    title="GitHub">
+                    <label>github.com/anubhav</label>
+                </button>
+            </li><br>
+
+            <li>
+                <i><img src="img/Linkdin.png" class="con" alt="LinkedIn"></i>
+                <strong>LinkedIn:</strong>
+                <button onclick="window.open('https://www.linkedin.com/in/anubhav-chowdhury-b7905b339', '_blank')"
+                    class="urls" title="LinkedIn">
+                    <label>linkedin.com/in/anubhav</label>
+                </button>
+            </li>
+
+        </ul>
+        <br>
+
+    </div>
     <footer>
         <div class="footer">
             <div class="footer-first">
