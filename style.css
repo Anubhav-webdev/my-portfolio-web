@@ -65,6 +65,36 @@ li a:hover {
     text-decoration: underline;
 }
 
+/* new*/
+.right ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: #00ffaa;
+    font-weight: 900;
+}
+
+li a:hover {
+    color: cyan;
+    transition: all 0.5s;
+    text-decoration: underline;
+}
+
+.another {
+    display: none;
+}
+
+/**/
+
 /* Section One */
 .section-one {
     display: flex;
@@ -234,8 +264,8 @@ strong {
 .section-five li {
     display: flex;
     align-items: center;
-    padding-left: 350px;
-    gap: 10px;
+    padding-left: 340px;
+    gap: 8px;
 }
 
 label {
@@ -256,7 +286,7 @@ label {
     text-align: center;
     background: #181818;
     border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
 .section-three h1 {
@@ -297,7 +327,7 @@ ol {
     padding: 24px 16px;
     background: linear-gradient(135deg, #232526 0%, #1e1e1e 100%);
     border-radius: 14px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
     transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
@@ -312,17 +342,18 @@ ol {
     height: 56px;
     margin-bottom: 14px;
     object-fit: contain;
-    filter: drop-shadow(0 2px 8px rgba(0,198,255,0.10));
+    filter: drop-shadow(0 2px 8px rgba(0, 198, 255, 0.10));
 }
 
 .image-flex {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 16px;
+
+
 }
 
-.vertical-title, .vt {
+.vertical-title,
+.vt {
     font-size: 1.15rem;
     font-weight: 700;
     margin-bottom: 10px;
@@ -331,11 +362,13 @@ ol {
     letter-spacing: 0.5px;
 }
 
-.vertical-desc, .vp {
+.vertical-desc,
+.vp {
     font-size: 0.95rem;
     color: #b0b0b0;
     margin-top: 6px;
 }
+
 /* Footer */
 footer {
     background-color: #171717;
@@ -391,11 +424,16 @@ h3 {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 818px) {
     nav {
         padding: 10px;
         justify-content: center;
     }
+
+    .another {
+        display: block;
+    }
+
 
     .right ul {
         display: none;
@@ -440,20 +478,44 @@ h3 {
     }
 
     .section-five li {
-    display: flex;
-    align-items: center;
+        display: flex;
+        align-items: center;
     }
-.section-two ul {
-    list-style: none;
-    text-align: left;
-    padding: 0px;
 
-}
+    label {
+        font-size: 1.1rem;
+
+    }
+
+    .section-five ul {
+        text-align: left;
+        position: relative;
+        right: 220px;
+    }
+
+    .section-two ul {
+        list-style: none;
+        text-align: left;
+        padding: 0px;
+
+    }
+
+    hr {
+        border: 2px solid cyan;
+        margin: 70px 1px;
+    }
 }
 
 @media (max-width: 480px) {
     .oneleft {
         font-size: 1.2rem;
+    }
+
+    .right ol {
+        gap: 8px;
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
     }
 
     .btn {
@@ -469,16 +531,34 @@ h3 {
     .footer div {
         text-align: center;
     }
-    
+
     .section-five li {
-    display: flex;
-    align-items: center;
+        display: flex;
+        align-items: center;
+
     }
+
+    label {
+        font-size: 1rem;
+
+    }
+
+    .section-five ul {
+        text-align: left;
+        position: relative;
+        right: 405px;
+    }
+
     .section-two ul {
-    list-style: none;
-    text-align: left;
-   padding: -35px;
-}
+        list-style: none;
+        text-align: left;
+        padding: -35px;
+    }
+
+    hr {
+        border: 2px solid cyan;
+        margin: 70px 1px;
+    }
 }
 
 ::-webkit-scrollbar {
@@ -504,6 +584,107 @@ h3 {
     }
 }
 
+@media (max-width: 320px) {
+    nav {
+        padding: 6px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right ol {
+        gap: 5px;
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .right ul {
+        display: none;
+    }
+
+    .section-one {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #mylogo {
+        height: 250px;
+        width: 230px;
+    }
+
+    .oneleft {
+        font-size: 1rem;
+        padding: 0 4px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .vertical {
+        width: 98%;
+        padding: 12px 4px;
+    }
+
+    .vt,
+    .vp {
+        position: static;
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.85rem;
+        padding: 10px 0;
+    }
+
+    .footer div {
+        text-align: center;
+        margin-bottom: 6px;
+    }
+
+    .section-five li {
+        display: flex;
+        align-items: center;
+
+    }
+
+    label {
+        font-size: 0.6rem;
+
+    }
+
+    .section-five ul {
+        text-align: left;
+        position: relative;
+        right: 412px;
+    }
+
+
+    hr {
+        border: 1px solid cyan;
+        margin: 30px 0;
+    }
+
+    .section {
+        padding: 12px 2px;
+    }
+}
 
 /* --------------------------------------- */
 /*          Dynamic Animations Added       */
@@ -567,7 +748,10 @@ h3 {
 }
 
 /* Fade-in Animation for Sections */
-.section-two, .section-three, .section-four, .section-five {
+.section-two,
+.section-three,
+.section-four,
+.section-five {
     animation: fadeInUp 1.2s ease forwards;
     opacity: 0;
     transform: translateY(30px);
